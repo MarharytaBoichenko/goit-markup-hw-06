@@ -592,48 +592,70 @@
             <use href="./images/icon/sprite.svg#close"></use>
           </svg>
         </button>
-        <form class="modal-form">
-          <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
-          <label class="form-field">
-            <span class="form-label">Имя</span>
-
-            <svg class="form-icon">
-              <use href="./images/icon/sprite.svg#person"></use>
-            </svg>
-            <input type="text" name="name" class="input-field" />
-          </label>
-          <label class="form-field">
-            <span class="form-label">Телефон</span>
-
-            <svg class="form-icon">
-              <use href="./images/icon/sprite.svg#phone-black"></use>
-            </svg>
-            <input type="tel" name="phone-number" class="input-field" />
-          </label>
-          <label class="form-field">
-            <span class="form-label">Почта</span>
-
-            <svg class="form-icon">
-              <use href="./images/icon/sprite.svg#email"></use>
-            </svg>
-            <input type="email" name="email" class="input-field" />
-          </label>
-          <label class="form-field">
-            <span class="form-label">Комментарий</span>
-            <textarea
-              name="comment"
-              rows="3"
-              placeholder="Введите текст"
-              class="input-field comment"
-            ></textarea>
-          </label>
-          <label>
-            <input type="checkbox" name="" value="agree" />
-            <p class="checkbox-text">
+        <form class="modal-form" autocomplete="off">
+          <div class="modal-field">
+            <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
+            <label class="form-field">
+              <span class="form-label">Имя</span>
+              <input
+                type="text"
+                name="name"
+                class="input-field"
+                placeholder=" "
+                pattern="^[a-zA-Z]+$"
+              />
+              <svg class="form-icon">
+                <use href="./images/icon/sprite.svg#person"></use>
+              </svg>
+            </label>
+            <label class="form-field">
+              <span class="form-label">Телефон</span>
+              <input
+                type="tel"
+                name="phone-number"
+                class="input-field"
+                placeholder=" "
+                pattern="[0-9]{10}"
+              />
+              <svg class="form-icon">
+                <use href="./images/icon/sprite.svg#phone-black"></use>
+              </svg>
+            </label>
+            <label class="form-field">
+              <span class="form-label">Почта</span>
+              <input
+                type="email"
+                name="email"
+                class="input-field"
+                placeholder=" "
+              />
+              <svg class="form-icon">
+                <use href="./images/icon/sprite.svg#email"></use>
+              </svg>
+            </label>
+            <label class="form-field comment">
+              <span class="form-label">Комментарий</span>
+              <textarea
+                name="comment"
+                placeholder="Введите текст"
+                class="comment-field"
+              ></textarea>
+            </label>
+            <label class="checkbox-text">
+              <input
+                type="checkbox"
+                name=""
+                value="agree"
+                required
+                class="checkbox"
+              />
+              <svg class="icon-check" width="16" height="15">
+                <use href="./images/icon/sprite.svg#check"></use>
+              </svg>
               Соглашаюсь с рассылкой и принимаю
               <a href="" class="agree-link">Условия договора</a>
-            </p>
-          </label>
+            </label>
+          </div>
           <button type="submit" class="button send-btn">Отправить</button>
         </form>
       </div>
