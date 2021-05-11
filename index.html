@@ -595,49 +595,53 @@
         <form class="modal-form" autocomplete="off">
           <div class="modal-field">
             <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
-            <label class="form-field">
-              <span class="form-label">Имя</span>
-              <div class="form-input">
-                <input
-                  type="text"
-                  name="name"
-                  class="input-field"
-                  placeholder=" "
-                  pattern="^[a-zA-Z]+$"
-                />
-                <svg class="form-icon">
-                  <use href="./images/icon/sprite.svg#person"></use>
-                </svg>
-              </div>
-            </label>
-            <label class="form-field">
-              <span class="form-label">Телефон</span>
-              <div class="form-input">
-                <input
-                  type="tel"
-                  name="phone-number"
-                  class="input-field"
-                  placeholder=" "
-                  pattern="[0-9]{10}"
-                />
-                <svg class="form-icon">
-                  <use href="./images/icon/sprite.svg#phone-black"></use>
-                </svg>
-              </div>
-            </label>
-            <label class="form-field">
-              <span class="form-label">Почта</span>
+            <label class="form-field" for="text"></label>
+            <span class="form-label">Имя</span>
+            <div class="form-input">
+              <input
+                type="text"
+                name="name"
+                class="input-field"
+                placeholder=" "
+                pattern="^[a-zA-Z]+$"
+                id="text"
+              />
+              <svg class="form-icon">
+                <use href="./images/icon/sprite.svg#person"></use>
+              </svg>
+            </div>
 
+            <label class="form-field" for="tel"></label>
+            <span class="form-label">Телефон</span>
+            <div class="form-input">
+              <input
+                type="tel"
+                name="phone-number"
+                class="input-field"
+                placeholder=" "
+                pattern="[0-9]{10}"
+                id="tel"
+              />
+              <svg class="form-icon">
+                <use href="./images/icon/sprite.svg#phone-black"></use>
+              </svg>
+            </div>
+
+            <label class="form-field" for="email"></label>
+            <span class="form-label">Почта</span>
+            <div class="form-input">
               <input
                 type="email"
                 name="email"
                 class="input-field"
                 placeholder=" "
+                id="email"
               />
               <svg class="form-icon">
                 <use href="./images/icon/sprite.svg#email"></use>
               </svg>
-            </label>
+            </div>
+
             <label class="form-field comment">
               <span class="form-label">Комментарий</span>
               <textarea
